@@ -1,6 +1,8 @@
 package com.iss.springboot;
 
+import com.iss.springboot.Models.Category;
 import com.iss.springboot.Models.Product;
+import com.iss.springboot.Repositories.ICategoryRepository;
 import com.iss.springboot.Services.IProductService;
 import com.iss.springboot.Services.ProductService;
 import org.junit.jupiter.api.Test;
@@ -13,6 +15,9 @@ class SpringbootApplicationTests {
     @Autowired
     private IProductService productService;
 
+    @Autowired
+    ICategoryRepository categoryRepository;
+
     @Test
     public void listProducts()
     {
@@ -23,6 +28,11 @@ class SpringbootApplicationTests {
     @Test
     public void saveProduct()
     {
-        productService.save(Product.builder().name("lenovo").price(9000).build());
+        Category category = Category.builder().id(1).name("Electronics").build();
+        categoryRepository.save(category);
+
+        productService.save(Product.builder().name("hp").price(10000).category(category).build());
+        productService.save(Product.builder().name("lenovo").price(9000).category(category).build());
+        productService.save(Product.builder().name("dell").price(12000).category(category).build());
     }
 }
