@@ -16,6 +16,12 @@ import lombok.NoArgsConstructor;
 public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @SequenceGenerator(
+            name = "product_seq",
+            sequenceName = "product_seq",
+            initialValue = 1000,
+            allocationSize = 1
+    )
     private int id;
 
     private String name;

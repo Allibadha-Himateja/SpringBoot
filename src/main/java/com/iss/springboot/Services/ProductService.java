@@ -2,14 +2,16 @@ package com.iss.springboot.Services;
 
 import com.iss.springboot.Models.Product;
 import com.iss.springboot.Repositories.IProductRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class ProductService implements IProductService
 {
 
     private IProductRepository productRepository;
-    public void setProductRepository(IProductRepository productRepository)
+    public ProductService(IProductRepository productRepository)
     {
         this.productRepository = productRepository;
     }
