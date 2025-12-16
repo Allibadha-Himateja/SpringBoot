@@ -1,0 +1,206 @@
+Topics
+What is Backend Development?
+Monolithic vs Microservices
+What is Spring Framework?
+What is Spring Boot?
+Why Spring Boot is used in Industry
+
+Tools Required
+JDK
+Maven
+IntelliJ / VS Code
+Postman
+
+Project Structure Overview
+
+📁 01-java-refresh/
+Topics
+JVM, JRE, JDK
+OOP Concepts
+Interfaces vs Abstract Classes
+Collections Framework
+Streams & Lambda
+Exception Handling
+Annotations in Java
+Reflection Basics
+
+📁 02-spring-core/
+Topics (VERY IMPORTANT)
+What is Spring IOC Container?
+Dependency Injection (DI)
+Types of DI
+Constructor
+Setter
+Field
+Bean Lifecycle
+@Component, @Service, @Repository, @Controller
+@Autowired vs Constructor Injection
+@Qualifier
+@Primary
+@Scope (singleton, prototype, request, session)
+Spring Context
+XML vs Java Config vs Annotation Config
+
+📁 03-spring-boot-basics/
+Topics
+What is Spring Boot?
+Spring Boot vs Spring
+Spring Boot Architecture
+Auto Configuration
+Starter Dependencies
+Spring Initializr
+@SpringBootApplication
+Application Startup Flow
+Embedded Servers (Tomcat, Jetty, Netty)
+Packaging (JAR vs WAR)
+
+📁 04-spring-boot-configuration/
+Topics
+application.properties vs application.yml
+@Value
+@ConfigurationProperties
+Profiles (dev, test, prod)
+External Configuration
+Environment Variables
+Command Line Arguments
+Custom Configuration Classes
+
+📁 05-rest-api-development/
+Topics
+REST Architecture
+HTTP Methods
+HTTP Status Codes
+@RestController
+@RequestMapping
+@GetMapping / @PostMapping / @PutMapping / @DeleteMapping
+@PathVariable
+@RequestParam
+@RequestBody
+DTO Pattern
+API Versioning
+Pagination & Sorting
+HATEOAS (Basics)
+
+📁 06-data-access-jpa/
+Topics (CORE BACKEND)
+JDBC vs JPA vs Hibernate
+ORM Concepts
+Entity Mapping
+@Entity, @Table, @Id
+@GeneratedValue
+Relationships
+OneToOne
+OneToMany
+ManyToOne
+ManyToMany
+Fetch Types
+Cascade Types
+JPQL
+Native Queries
+Paging & Sorting
+Transactions (@Transactional)
+Auditing
+
+📁 07-validation-exception-handling/
+Topics
+Bean Validation
+@NotNull, @NotBlank, @Size, @Email
+Custom Validators
+Global Exception Handling
+@ControllerAdvice
+@ExceptionHandler
+Custom Exceptions
+Error Response Structure
+
+📁 08-security/
+Topics (HIGHLY IMPORTANT)
+Spring Security Architecture
+Authentication vs Authorization
+Basic Authentication
+Form Login
+JWT Authentication
+OAuth2 Basics
+Role-based Access
+Method Level Security
+CORS & CSRF
+Password Encoding
+
+📁 09-testing/
+Topics
+Unit Testing
+Integration Testing
+JUnit 5
+Mockito
+@SpringBootTest
+@WebMvcTest
+@DataJpaTest
+Testcontainers
+Code Coverage
+
+📁 10-logging-monitoring/
+Topics
+Logging Levels
+Logback
+SLF4J
+Centralized Logging
+Spring Boot Actuator
+Health Checks
+Metrics
+Prometheus & Grafana (Intro)
+
+📁 11-microservices/
+Topics
+Monolith vs Microservices
+Spring Cloud Overview
+Config Server
+Service Discovery (Eureka)
+API Gateway
+Load Balancing
+Circuit Breaker (Resilience4j)
+Inter-service Communication
+Distributed Tracing
+
+📁 12-messaging-streaming/
+Topics
+Asynchronous Communication
+Kafka Basics
+RabbitMQ Basics
+Event-driven Architecture
+Spring Cloud Stream
+
+📁 13-cloud-deployment/
+Topics
+Docker Basics
+Dockerizing Spring Boot App
+Kubernetes Basics
+CI/CD Pipeline
+AWS Deployment
+Azure Deployment
+Environment Separation
+
+📁 14-performance-optimization/
+Topics
+JVM Tuning
+Connection Pooling
+Caching (Redis)
+Lazy vs Eager Loading
+Database Indexing
+Async Processing
+Rate Limiting
+
+📁 15-real-world-projects/
+Projects
+User Management System
+Employee Management REST API
+JWT Secured Backend
+E-commerce Backend
+Microservices Based Application
+AI-integrated Spring Boot Service (Good for your profile 👌)
+
+📁 16-interview-preparation/
+Topics
+Spring Boot Interview Questions
+Common Errors & Fixes
+Design Patterns in Spring
+Real Production Issues
+System Design with Spring Boot
